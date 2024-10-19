@@ -1,0 +1,28 @@
+.header {
+    background-color: lightskyblue;
+}
+
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin: 30px;
+}
+
+.list {
+    flex: 1;
+}
+
+.chart {
+    flex: 1;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
