@@ -1,7 +1,3 @@
-.header {
-    background-color: lightskyblue;
-}
-
 .app-container {
     display: flex;
     justify-content: space-between;
@@ -9,14 +5,54 @@
     width: 1400px;
     margin: 30px;
 }
-
+.header {
+    background-color: lightskyblue;
+}
 .list {
     flex: 1;
 }
-
 .chart {
     flex: 1;
     height: 300px;
+}
+.carousel {
+    display: flex;
+    margin: 20rem 15rem;
+
+    .direction {
+        background: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        width: 10%;
+
+        .arrow {
+            width: 50%;
+        }
+    }
+
+    .card-div {
+        width: 50vw;
+
+        .card-scroll {
+            display: flex;
+            overflow: hidden;
+        }
+    }
+}
+
+.card {
+    background-color: black;
+    min-width: 49%;
+    max-width: 50%;
+    height: 28vh;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 12px;
+
+    .text {
+        color: white;
+    }
 }
 
 @media (max-width: 768px) {

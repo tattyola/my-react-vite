@@ -1,8 +1,8 @@
 
-const Header = () => {
+const Header = ({header}) => {
     return (
         <div className='header'>
-            hello
+            {header}
         </div>
     );
 };
